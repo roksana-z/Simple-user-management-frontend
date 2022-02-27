@@ -1,0 +1,212 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #566787;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    font-size: 16px;
+    background: #f5f5f5;
+}
+
+a {
+    text-decoration: unset;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.wrapper {
+    padding: 20px 25px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.header-wrapper {
+    padding: 16px 30px;
+    margin: -20px -25px 10px;
+    border-radius: 3px 3px 0 0;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    background: #299be4;
+}
+
+.user-wrapper {
+    padding: 14px 0;
+    border-bottom: 2px solid #e9e9e9;
+    color: black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/*Buttons*/
+.btn {
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    border: none;
+    font-size: 13px;
+    color: #566787;
+    background: #fff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #e9e9e9;
+}
+
+.icon {
+    height: 20px;
+    width: 20px;
+    fill: #299be4;
+}
+
+/*Form*/
+.form {
+    display: none;
+    position: fixed;
+    z-index: 8;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.form-content {
+    margin: 50px auto;
+    width: 400px;
+}
+
+form {
+    padding: 25px;
+    margin: 25px;
+    box-shadow: 0 2px 5px #f5f5f5;
+    background: #eee;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    /* margin-bottom: 20px; */
+    border: 1px solid #1c87c9;
+    outline: none;
+}
+
+.form-title {
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+}
+
+.form-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+}
+
+.toggle-password-button {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.cancel-cl {
+    background-color: #6c757d;
+}
+
+.submit-button:hover {
+    background: #2371a0;
+}
+
+.submit-disabled:disabled,
+.submit-disabled[disabled] {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1024px) {
+    .form-content {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-content {
+        width: 70%;
+    }
+}
+
+@media (max-width: 425px) {
+    .form-content {
+        width: 90%;
+    }
+}
+
+/*Atomic*/
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.justify-self-end {
+    justify-self: end;
+}
+
+.bc-main {
+    background-color: #299be4;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.is-invalid {
+    border-color: #dc3545;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.error {
+    height: 20px;
+    font-size: 10px;
+    color: red;
+}
